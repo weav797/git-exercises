@@ -1,0 +1,130 @@
+Starting from here, these commands are what I used to fulfill the git exercise component of the devops bootcamp. 
+
+
+  408  clear
+  409  git clone git@gitlab.com:twn-devops-bootcamp/latest/03-git/git-exercises.git
+  410  mkdir ./git-exercises
+  411  cd git-exercises
+  412  git clone --bare https://gitlab.com/twn-devops-bootcamp/latest/03-git/git-exercises.git
+  413  ls -l
+  414  cd git-exercises.git
+  415  git remote set-url --push origin git@github.com:weav797/git-exercises.git
+  416  git push --mirror
+  417  ls -l
+  418  cd ..
+  419  cd ..
+  420  ls -l
+  421  rm -r git-exercises
+  422  y
+  423  y
+  424  y
+  425  ls -l
+  426  git clone git@github.com:weav797/git-exercises.git
+  427  ls -l
+  428  cd git-exercises
+  429  git remote -v
+  430  git remote add origin git@github.com:weav797/git-exercises.git
+  431  git push origin main
+  432  history | grep cache
+  433  git status
+  434  ls -l
+  435  ls -al
+  436  git rm --cached .idea
+  437  git rm -r --cached .idea
+  438  git rm --cached .DS_Store
+  439  find out
+  440  find grade
+  441  find gradle
+  442  find "gradle"
+  443  find ".gradle"
+  444  find build
+  445  git status
+  446  git add .
+  447  git commit -m "Removing .idea folder and .DS_Store from tracking, adding to .gitignore"
+  448  git push
+  449  git checkout main
+  450  git checkout features/solutions
+  451  git checkout feature/solutions
+  452  git pull
+  453  git merge master
+  454  git merge main
+  455  git status
+  456  git add .
+  457  git commit -m "Merge from Main branch
+
+git commit -m "Merge from Main branch"
+
+  458  git commit -m "Merge from Main branch"
+  459  git push
+  460  git checkout main
+  461  ls -l
+  462  git checkout -b feature/new-image
+  463  git status
+  464  git diff
+  465  git add .
+  466  git commit -m "Changed logstash-logback-encoder-version to 7.3, and added image to index.html"
+  467  git push
+  468  git push --set-upstream origin feature/new-image
+  469  git checkout main
+  470  ls -al
+  471  git branch -b bugfix/spelling-mistake
+  472  git checkout -b bugfix/spelling-mistake
+  473  git diff
+  474  git add .
+  475  git commit -m "Fixed spelling mistake on Application.java"
+  476  git push
+  477  git push --set-upstream origin bugfix/spelling-mistake
+  478  git fetch origin
+  479  git merge origin/main
+  480  git status
+  481  git add .
+  482  git commit -m "Changing logback version to 7.2"
+  483  git merge origin/main
+  484  history
+  485  git status
+  486  git merge origin/main
+  487  git add .
+  488  git merge origin/main
+  489  git commit -m "Fixed merge conflict, updated logback version to 7.3"
+  490  git merge origin/main
+  491  git push
+  492  git status
+  493  git add .
+  494  git commit -m "Corrected spelling for Sarah on index.html"
+  495  git status
+  496  git status
+  497  git add .
+  498  git commit -m "Changed front-page image to correct one"
+  499  git status
+  500  git push
+  501  git log
+  502  git revert 69e74b9935adf512483d0442b8d687734c7df8d7
+  503  git status
+  504  git push
+  505  git status
+  506  git add .
+  507  git commit -m "Bruno moving to DevOps, updating website accordingly"
+  508  git log
+  509  git reset --HARD~1
+  510  git reset --hard HEAD~1
+  511  git log
+  512  git checkout master
+  513  git checkout main
+  514  git pull
+  515  git status
+  516  git checkout bugfix/spelling-mistake
+  517  git checkout main
+  518  git merge bugfix/spelling-mistake
+  519  git push
+  520  history
+  521  git branch
+  522  git checkout bugfix/spelling-mistake
+  523  git branch
+  524  git origin
+  525  git push -d origin bugfix/spelling-mistake
+  526  git branch -d bugfix/spelling-mistake
+  527  git checkout main
+  528  git branch -d bugfix/spelling-mistake
+  529  git branch
+  530  cd ..
+  531  history > git-exercise-output.txt
